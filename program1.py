@@ -13,8 +13,6 @@ class Solution(object):
                     return False
             else:
                 stack.append(char)
-        
-        # If the stack is empty, all opening brackets were properly closed
         return not stack
 
 
