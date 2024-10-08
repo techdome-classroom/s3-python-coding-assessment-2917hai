@@ -5,16 +5,22 @@ class Solution(object):
         :rtype: bool
         """
         stack = []
-        bracket_map = {')': '(', '}': '{', ']': '['}
+        mapping = {')': '(', '}': '{', ']': '['}
+        
         for char in s:
-            if char in bracket_map:
-                top_element = stack.pop() if stack else '#'
-                if bracket_map[char] != top_element:
+            if char in mapping: 
+                top_element = stack.pop() if stack else '#' 
+                if mapping[char] != top_element:
                     return False
             else:
                 stack.append(char)
-        return not stack
+        
+        return not stack 
 
+sol = Solution()
+print(sol.isValid("()"))     
+print(sol.isValid("()[]{}"))
+print(sol.isValid("(]"))
 
 
 
