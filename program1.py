@@ -7,7 +7,7 @@ class Solution(object):
              top_element = stack.pop() if stack else '#'
               if bracket_map[char] != top_element:
                 return False
-        else:
+                else:
          stack.append(char)
          return not stack
         
