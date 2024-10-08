@@ -4,6 +4,9 @@ class Solution(object):
         :type s: str
         :rtype: int
         """
+        if not s:  # Return 0 if the input string is empty
+            return 0
+
         # Map of Roman numerals to their integer values
         roman_map = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}
         
