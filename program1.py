@@ -4,7 +4,6 @@ class Solution(object):
         :type s: str
         :rtype: bool
         """
-        # Stack to hold opening brackets
         stack = []
         
         # Dictionary to map closing brackets to their corresponding opening brackets
